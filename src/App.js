@@ -1,12 +1,17 @@
-import React from "react";
+import "./App.scss";
+import AddTodoForm from "./components/AddTodoForm";
+import TodoList from "./components/TodoList";
+import TotalCompleteItems from "./components/TotalCompleteItems";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>boilerplate</h1>
-      <p>sjsjsjsj</p>
+    <div className="App">
+      <h1>Things to do</h1>
+      <AddTodoForm />
+      <TodoList />
+      <TotalCompleteItems />
     </div>
   );
-};
+}
 
 export default App;
